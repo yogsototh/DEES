@@ -1,0 +1,39 @@
+Usage :
+dees OPTIONS
+
+OPTIONS :
+-H		affiche l'aide étendue (options)
+-Y ou -I	envoie la fonction Y (mode interactif)
+
+
+--- APPRENTISSAGE ---
+--dees		algorithme DEES
+--dees2		algorithme DEES2
+--deesbm	algorithme DEES avec Baum Welch
+--alergia	algorithme alergia
+--mdi		algorithme mdi
+--bm		algorithme Baum Welch 
+
+--learn		apprend avec validation croisée
+--learnbm	apprentissage avec ensemble test avec methode deesBM
+--learnmdi	apprentissage avec MDI
+--learnalergia	apprentissage avec alergia
+--bestlearn	plusieurs apprentissages pour trouver le meilleur
+
+--- MANIPULATION DE FICHIERS ---
+--export	exporte vers des formats d'automates differents
+--convert	convertit des echantillons
+
+--- OUTILS DE DIAGNOSTICS ---
+--dist		affiche la distance entre deux MA
+--class		affiche la classe d'un PFA
+--affiche	affiche un automate sur la sortie standard
+--test		fait un test à partir de l'automate
+--proba		show probabilities of words of a sample
+-P or --showps	affichage postscript
+
+--- MANIPULATION DE MA ---
+--deletetransitions	delete transitions of some value
+--sample	genere un échantillon
+--grp		genere un automate probabiliste
+--random	generate a random automaton
