@@ -25,7 +25,7 @@ void test_PSe(void) {
 	cout << "res = " << res << endl;
 	
 	for (q=PSe.begin() ; q != PSe.end() ; q++) {
-		cout << "P_" << q->first << "(\Se) = " << q-> second << endl;
+		cout << "P_" << q->first << "(\\Se) = " << q-> second << endl;
 	}
 }
 

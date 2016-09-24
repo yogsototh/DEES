@@ -475,7 +475,7 @@ RESULT Sample::load (const char *Filename)
                 break;
 
             default:
-                cerr << "Erreur non repertoriée" << endl;
+                cerr << "Erreur non repertoriee" << endl;
             }
         }
         return e;

@@ -249,7 +249,7 @@ MA::save_dot (const char *Filename,
         }
 
         ofstream fp (Filename);
-        if (fp == NULL)
+        if (!fp)
         {
             throw 1;
         }
@@ -795,7 +795,7 @@ RESULT MA::load (const char *Filename)
         if (Filename == NULL)
             throw - 1;
         ifstream fp (Filename);
-        if (fp == NULL)
+        if (!fp)
             throw - 2;
         fp.precision (30);
         string buf;

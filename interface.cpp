@@ -70,7 +70,7 @@ void proportion_PRFA()
         for (j = 0; j < nb_try; ++j)
         {
             A.becomeRandomMax(i,2,0,nb_moy_succ, 1, i);
-            taille_auto = A.size ();
+            taille_auto = (int) A.size ();
             if (taille_auto == (unsigned int) i)
             {
                 if (A.isPFA ())
@@ -338,7 +338,7 @@ void Apprentissage_unique()
     string str;
     float tmp;
     float precision;
-    T_ModeReturn moderet=begin;
+    T_ModeReturn moderet=::begin;
     T_ModeEpsilon modeeps=epsfixed;
 
     int max_etats=INT_MAX;
@@ -348,7 +348,7 @@ void Apprentissage_unique()
         cout << "1 - La precision .................. : "
         << precision << "\n";
         cout << "2 - Le mode de retour ............. : "
-        << (moderet==begin?"begin":"end") << "\n";
+        << (moderet==::begin?"begin":"end") << "\n";
         cout << "3 - Le mode de gestion de epsilon . : "
         << (modeeps==epsfixed?"epsfixed":
             (modeeps==variable?"variable":"word_variable"))
@@ -377,9 +377,9 @@ void Apprentissage_unique()
             cout << "mode de retour (begin|end|b|e) : ";
             cin >> str;
             if ((str=="end") || (str == "e"))
-                moderet=end;
+                moderet=::end;
             else
-                moderet=begin;
+                moderet=::begin;
         }
         else if (reponse == "3")
         { // mode de gestion de epsilon

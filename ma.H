@@ -124,9 +124,9 @@ public:
 	// true if the MA is empty
 	inline bool empty() const {return Q.empty();}
 	// return the size of the MA
-    inline unsigned int size () const {return Q.size ();}
+    inline unsigned long size () const {return Q.size ();}
 	// return the number of letter of the MA
-    inline unsigned int nb_lettres () const {return Sigma.size ();}
+    inline unsigned long nb_lettres () const {return Sigma.size ();}
 	// return safely iota[q] (even if iota[q]=0)
     inline float val_iota (const State q) const {
         SFunc::const_iterator i = iota.find (q);

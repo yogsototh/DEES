@@ -26,7 +26,6 @@
 #include "pfa.H"
 #include "simplex.H"
 
-
 typedef enum {determinist, positive, nonconstrained} T_ModeVariables;
 typedef enum {begin, end} T_ModeReturn;
 typedef enum {epsfixed, variable, word_variable} T_ModeEpsilon;
@@ -130,7 +129,7 @@ public:
                 const double prec,  // The precision parameter
                 const double epsprime, // The bound under which transition are erased
                 const bool verbose = false,  // verbose mode (show the states during construction)
-                const T_ModeReturn moderet = end, // return mode (end of the tree or begin of the tree)
+                const T_ModeReturn moderet = ::end, // return mode (end of the tree or begin of the tree)
                 const T_ModeEpsilon modeeps = variable, // epsilon mode (epsfixed or variable)
                 unsigned int maxstates = INT_MAX, // The maximal states number after which learning is cancelled
                 unsigned int seuil=10,  // La periodicitÈ minimum avant de ne plus considÈrer l'Ètat
@@ -175,5 +174,4 @@ protected:
 	RESULT compute_XR(void);
 
 	};
-
 #endif

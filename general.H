@@ -18,15 +18,17 @@
 #ifndef GENERAL_H
 #define GENERAL_H
 
-using namespace std;
+
 #include <string>
 #include <set>
 #include <map>
-//#include <vector>
+#include <vector>
 //#include <hash_set>
 #include <iostream>		// pour cout <<
 #include <fstream>		// pour fic <<
 #include <cmath>
+
+using namespace std;
 
 // ------------- pour le portage --------------
 

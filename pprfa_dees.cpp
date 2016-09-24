@@ -42,10 +42,10 @@ PPRFA::DEES (T_ModeVariables modeVariables,
 		cout << "\nmoderet = ";
 		switch (moderet)
 		{
-            case begin:
+            case ::begin:
                 cout << "begin";
                 break;
-            case end:
+            case ::end:
                 cout << "end";
 		}
 		cout << "\nmodeeps = ";

@@ -15,7 +15,6 @@
  *                                                                         *
  ***************************************************************************/
 
-using namespace std;
 #include "interface.H"
 #include "test.H"
 #include "main.H"
@@ -72,7 +71,7 @@ bool viewmultipletransitions=false; // vrai pour ne plus regrouper les transitio
 bool interactive=false;     // interactive mode
 
 // L'apprentissage
-T_ModeReturn moderet = end;	// Le mode de retour des arÍtes (end ou begin)
+T_ModeReturn moderet = ::end;	// Le mode de retour des arÍtes (end ou begin)
 T_ModeEpsilon modeeps = variable;	// Le mode d'apprentissage avec epsilon fixe ou variable (epsfixed ou variable)
 float test_proportion = 0.2;	// la proportion de l'echantillon attribuee au test
 int nb_tours = 100;	// Le nombre d'itÈrations pour Baum Welch
@@ -590,7 +589,7 @@ void affiche_PSe(void) {
 	cout << "res = " << res << endl;
 	
 	for (q=PSe.begin() ; q != PSe.end() ; q++) {
-		cout << "P_" << q->first << "(\Se) = " << q-> second << endl;
+		cout << "P_" << q->first << "(\\Se) = " << q-> second << endl;
 	}
 }
 
@@ -713,9 +712,9 @@ initialise_arguments (int argc, char *argv[])
         {
             arg = argv[++i];
             if (arg == "begin")
-                moderet = begin;
+                moderet = ::begin;
             else
-                moderet = end;
+                moderet = ::end;
         }
         else if (arg == "--modeeps")
         {

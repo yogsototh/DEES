@@ -340,7 +340,7 @@ PFA::perplexite (const Sample & S) const
 		res = sum = 0;
 		for (w = S.begin (); w != S.end (); S.next (w))
 		{
-			res += log (r(w->first)) * w->second;
+			res += log (p(w->first)) * w->second;
 			sum += w->second;
 		}		
 	}

@@ -105,7 +105,7 @@ public:
         return S;
     }
     // Renvoie le nombre de mots contenus dans S (pour la fct° precision)
-    inline unsigned int nb_mots() const
+    inline unsigned long nb_mots() const
     {
         return S.size();
     }
