@@ -1,3 +1,12 @@
+> This project has two homes.
+> It is ok to work in github, still, for a better decentralized web
+> please consider contributing (issues, PR, etc...) throught:
+>
+> https://gitlab.esy.fun/yogsototh/DEES
+
+---
+
+
 What is DEES and what does it do?
 
 DEES is a is a _Multiplicity Automata_ (MA) inference algorithm.
